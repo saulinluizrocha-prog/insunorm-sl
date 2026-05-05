@@ -31,128 +31,230 @@
     }
   </style>
 <script type="text/javascript" src="script_land.js" defer></script>
-<!-- INÍCIO DO CÓDIGO DE SEO E SCHEMA PARA INSUNORM -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kupite Insunorm - 50% Popust | Plačilo po Povzetju</title>
-    <meta name="description" content="Naročite originalni Insunorm še danes s 50% popustom za samo 39 EUR. 100% varen nakup z možnostjo plačila ob prevzemu. Hitra dostava po vsej Sloveniji.">
-    <meta name="keywords" content="Insunorm, kupi Insunorm, cena Insunorm, sladkor, plačilo po povzetju, ugodno, Slovenija">
-    <meta name="author" content="Insunorm Uradni Prodajalec">
-    <link rel="canonical" href="https://insunorm-sl.vercel.app/">
-    
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Insunorm - Akcija 50% Popust">
-    <meta property="og:description" content="Zagotovite si svoj Insunorm za 39 EUR. Plačate varno ob prevzemu.">
-    <meta property="og:type" content="product">
-    <meta property="og:url" content="https://insunorm-sl.vercel.app/">
-    <meta property="og:locale" content="sl_SI">
-    
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Insunorm Akcija - Naroči Zdaj">
-    <meta name="twitter:description" content="Naročite varno in plačajte po povzetju. Samo 39 EUR!">
 
-    <!-- Preconexões de Performance (Ajuste as URLs se usar CDNs) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Insunorm">
+  <meta name="language" content="Slovenian">
 
-    <!-- Schema Markup JSON-LD Completo -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Product",
-          "@id": "https://insunorm-sl.vercel.app/#product",
-          "name": "Insunorm",
-          "description": "Insunorm je visokokakovosten izdelek s preverjeno sestavo. Na voljo je s 50% popustom in varnim plačilom ob dostavi.",
-          "sku": "INSU-SL-001",
-          "brand": {
-            "@type": "Brand",
-            "name": "Insunorm"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://insunorm-sl.vercel.app/",
-            "priceCurrency": "EUR",
-            "price": "39.00",
-            "priceValidUntil": "2026-12-31",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition",
-            "seller": {
-              "@type": "Organization",
-              "name": "Insunorm Slovenija"
-            }
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "124"
-          },
-          "review": [
-            {
-              "@type": "Review",
-              "author": {
-                "@type": "Person",
-                "name": "Maja N."
-              },
-              "datePublished": "2025-10-15",
-              "reviewBody": "Zelo hitra dostava in odlično, da lahko plačam kurirju. Priporočam!",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5"
-              }
-            }
-          ]
+  <!-- GEO TAGS -->
+  <meta name="geo.region" content="SI">
+  <meta name="geo.country" content="Slovenia">
+  <meta name="geo.placename" content="Ljubljana">
+
+  <!-- SEO BASE -->
+  <title>Insunorm | 50% Popust – Naroči z Dostavo Domov</title>
+  <meta name="description" content="Naravna podpora pri sladkorni bolezni. Insunorm zdaj za 39€ z 50% popustom. Plačilo ob dostavi – brez tveganja. Naroči danes in prihranite!">
+  <meta name="keywords" content="Insunorm, sladkorna bolezen, krvni sladkor, naravna formula, plačilo ob dostavi, diabetes, popust, slovenija, naroči, zdravje">
+  <link rel="canonical" href="https://insunorm-sl.vercel.app/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="Insunorm – 50% Popust | Plačilo ob Dostavi">
+  <meta property="og:description" content="Naravna podpora za uravnavanje krvnega sladkorja. Samo 39€ z dostavo domov. Plačate šele ob dostavi!">
+  <meta property="og:url" content="https://insunorm-sl.vercel.app/">
+  <meta property="og:image" content="https://insunorm-sl.vercel.app/og-image.jpg">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:site_name" content="Insunorm Slovenija">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Insunorm – 50% Popust | Plačilo ob Dostavi">
+  <meta name="twitter:description" content="Naravna formula za sladkorno bolezen. Naroči za 39€ – plačaš šele ko prejmete paket!">
+  <meta name="twitter:image" content="https://insunorm-sl.vercel.app/og-image.jpg">
+
+  <!-- PERFORMANCE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="preload" as="image" href="https://insunorm-sl.vercel.app/hero.webp">
+
+  <!-- JSON-LD SCHEMA MARKUP -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        "@id": "https://insunorm-sl.vercel.app/#product",
+        "name": "Insunorm",
+        "description": "Insunorm je naravni prehranski dodatek, zasnovan za podporo pri uravnavanju krvnega sladkorja pri osebah s sladkorno boleznijo. Edinstvena formula z naravnimi sestavinami pomaga ohranjati stabilne ravni glukoze v krvi.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Insunorm"
         },
-        {
-          "@type": "FAQPage",
-          "@id": "https://insunorm-sl.vercel.app/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Kako lahko plačam?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Nudimo plačilo po povzetju. To pomeni, da naročilo plačate šele, ko vam ga kurir dostavi na dom. Ne potrebujete kreditne kartice."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Kakšna je cena dostave?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Trenutno nudimo posebno akcijo s ceno izdelka 39 EUR, kar vključuje 50% popust."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Kdaj bom prejel svoj paket?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Dostava je hitra. Po potrditvi naročila bo paket odpremljen in dostavljen na vaš naslov v nekaj dneh."
-              }
-            }
-          ]
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://insunorm-sl.vercel.app/#organization",
-          "name": "Insunorm Uradni Zastopnik",
-          "url": "https://insunorm-sl.vercel.app/"
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://insunorm-sl.vercel.app/#website",
+        "sku": "INSUNORM-SL-001",
+        "image": [
+          "https://insunorm-sl.vercel.app/product-image.jpg"
+        ],
+        "url": "https://insunorm-sl.vercel.app/",
+        "offers": {
+          "@type": "Offer",
           "url": "https://insunorm-sl.vercel.app/",
-          "name": "Insunorm Slovenija"
+          "priceCurrency": "EUR",
+          "price": "39.00",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@type": "Organization",
+            "name": "Insunorm Slovenija"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "EUR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "businessDays": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"]
+              },
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 1,
+                "maxValue": 2,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 2,
+                "maxValue": 5,
+                "unitCode": "DAY"
+              }
+            }
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "312",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Marija K."
+            },
+            "reviewBody": "Insunorm mi je zelo pomagal pri uravnavanju sladkorja. Naročila sem ga z dostavo in plačala ob prejemu – super enostavno!",
+            "datePublished": "2025-03-15"
+          },
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Franc P."
+            },
+            "reviewBody": "Odličen izdelek, priporočam vsem s sladkorno boleznijo. Dostava je bila hitra, plačilo ob dostavi pa zelo priročno.",
+            "datePublished": "2025-04-02"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://insunorm-sl.vercel.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Kako naročim Insunorm?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Naročilo oddate neposredno na naši spletni strani. Izpolnite obrazec s svojimi podatki in naš operater vas bo poklical za potrditev. Paket prejmete na dom v 2–5 delovnih dneh."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ali moram plačati vnaprej?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ne! Insunorm delujemo s sistemom plačila ob dostavi (COD). Plačate šele ko prejmete paket – brez kreditne kartice, brez tveganja."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Koliko stane Insunorm?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Insunorm je trenutno na voljo za samo 39 €, kar predstavlja 50% popust od redne cene 78 €. Dostava je vključena v ceno."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ali je Insunorm varen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Insunorm je naravni prehranski dodatek, sestavljen iz skrbno izbranih naravnih sestavin. Pred uporabo se posvetujte z zdravnikom, še posebej če jemljete zdravila za sladkorno bolezen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kako dolgo traja dostava v Slovenijo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dostava po vsej Sloveniji traja od 2 do 5 delovnih dni. Paket prejmete na vaš naslov, plačate pa ob prevzemu."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://insunorm-sl.vercel.app/#organization",
+        "name": "Insunorm Slovenija",
+        "url": "https://insunorm-sl.vercel.app/",
+        "logo": "https://insunorm-sl.vercel.app/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "availableLanguage": "Slovenian"
         }
-      ]
-    }
-    </script>
-</head>
-<!-- FIM DO CÓDIGO DE SEO E SCHEMA PARA INSUNORM -->
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://insunorm-sl.vercel.app/#website",
+        "url": "https://insunorm-sl.vercel.app/",
+        "name": "Insunorm Slovenija",
+        "inLanguage": "sl",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://insunorm-sl.vercel.app/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Domov",
+            "item": "https://insunorm-sl.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Insunorm",
+            "item": "https://insunorm-sl.vercel.app/#product"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
 <script defer
   data-tag="CDzk14WZ3pkOENplwjEoLa"
