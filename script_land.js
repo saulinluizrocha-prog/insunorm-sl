@@ -1,6 +1,6 @@
 (function() {
     var queryStr = window.location.search,
-        currentRequestModify = 'api.php',
+        currentRequestModify = '/api/order.php',
         forms = document.forms,     //search all forms
         formLength = forms.length,  //forms count
         i;
