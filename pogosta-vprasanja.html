@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="sl" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pogosta vprašanja | Insunorm Slovenija</title>
+	<meta name="description" content="Odgovori na pogosta vprašanja o Insunorm – naročilu, dostavi, plačilu ob dostavi, sestavinah in varnosti izdelka.">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://insunorm-sl.vercel.app/pogosta-vprasanja.html">
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+			{"@type":"Question","name":"Kako naročim Insunorm?","acceptedAnswer":{"@type":"Answer","text":"Izpolnite spletni obrazec z imenom in telefonsko številko. Naš operater vas pokliče za potrditev. Paket prejmete v 2–5 delovnih dneh."}},
+			{"@type":"Question","name":"Ali moram plačati vnaprej?","acceptedAnswer":{"@type":"Answer","text":"Ne. Insunorm deluje s sistemom plačila ob dostavi (COD). Plačate šele ko prejmete paket – brez kartice."}},
+			{"@type":"Question","name":"Koliko stane Insunorm?","acceptedAnswer":{"@type":"Answer","text":"Insunorm je na voljo za 39 € (50% popust od redne cene 78 €). Dostava je vključena."}},
+			{"@type":"Question","name":"Ali je Insunorm varen?","acceptedAnswer":{"@type":"Answer","text":"Insunorm je naravno prehransko dopolnilo. Pred uporabo se posvetujte z zdravnikom, zlasti če jemljete zdravila."}},
+			{"@type":"Question","name":"Kako dolgo traja dostava?","acceptedAnswer":{"@type":"Answer","text":"Dostava po vsej Sloveniji traja 2–5 delovnih dni. Plačate ob prevzemu."}}
+		]
+	}
+	</script>
+	<style>
+		*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+		body { background: #0d0d0f; color: rgba(255,255,255,0.82); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.75; }
+		.page-header { background: linear-gradient(135deg, rgba(124,77,255,0.12), rgba(224,64,251,0.08)); border-bottom: 1px solid rgba(124,77,255,0.18); padding: 48px 24px 40px; text-align: center; }
+		.page-header a { font-family: 'Manrope', sans-serif; font-size: 22px; font-weight: 800; background: linear-gradient(90deg, #7c4dff, #e040fb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; display: inline-block; margin-bottom: 20px; }
+		.page-header h1 { font-family: 'Manrope', sans-serif; font-size: clamp(24px, 4vw, 36px); font-weight: 800; color: #fff; }
+		.page-header .subtitle { margin-top: 10px; color: rgba(255,255,255,0.45); font-size: 14px; }
+		.page-container { max-width: 780px; margin: 0 auto; padding: 56px 24px 80px; }
+		.faq-list { display: flex; flex-direction: column; gap: 16px; }
+		.faq-item { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; overflow: hidden; }
+		.faq-question {
+			width: 100%; background: none; border: none; padding: 22px 24px; text-align: left;
+			display: flex; justify-content: space-between; align-items: center; gap: 16px; cursor: pointer;
+			font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 600; color: #fff; transition: background 0.2s;
+		}
+		.faq-question:hover { background: rgba(124,77,255,0.07); }
+		.faq-question .faq-icon { flex-shrink: 0; width: 24px; height: 24px; background: linear-gradient(135deg, #7c4dff, #e040fb); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #fff; transition: transform 0.3s; }
+		.faq-item.open .faq-icon { transform: rotate(45deg); }
+		.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.2s; }
+		.faq-item.open .faq-answer { max-height: 400px; }
+		.faq-answer-inner { padding: 0 24px 22px; color: rgba(255,255,255,0.65); font-size: 15px; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 16px; }
+		a { color: #e040fb; text-decoration: none; }
+		a:hover { text-decoration: underline; }
+		.cta-box { background: linear-gradient(135deg, rgba(124,77,255,0.12), rgba(224,64,251,0.08)); border: 1px solid rgba(124,77,255,0.25); border-radius: 16px; padding: 36px; text-align: center; margin-top: 56px; }
+		.cta-box h2 { font-family: 'Manrope', sans-serif; font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 12px; }
+		.cta-box p { color: rgba(255,255,255,0.6); margin-bottom: 24px; }
+		.btn-cta { display: inline-block; background: linear-gradient(135deg, #7c4dff, #e040fb); color: #fff; font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 700; padding: 14px 32px; border-radius: 12px; text-decoration: none; transition: opacity 0.2s; }
+		.btn-cta:hover { opacity: 0.88; text-decoration: none; }
+		.page-footer { background: #0a0a0c; border-top: 1px solid rgba(255,255,255,0.07); padding: 24px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.28); }
+		.page-footer a { color: rgba(255,255,255,0.45); margin: 0 8px; }
+	</style>
+</head>
+<body>
+
+<header class="page-header">
+	<a href="/">insunorm</a>
+	<h1>Pogosta vprašanja</h1>
+	<p class="subtitle">Hitri odgovori na najpogostejša vprašanja</p>
+</header>
+
+<div class="page-container">
+
+	<div class="faq-list">
+
+		<div class="faq-item">
+			<button class="faq-question" aria-expanded="false">
+				Kako naročim Insunorm?
+				<span class="faq-icon" aria-hidden="true">+</span>
+			</button>
+			<div class="faq-answer" role="region">
+				<div class="faq-answer-inner">
+					Naročilo oddate neposredno na spletni strani. Izpolnite obrazec z imenom in telefonsko številko – vse skupaj traja manj kot 2 minuti. Naš operater vas pokliče za potrditev naslova in naročila. Paket prejmete na dom v 2–5 delovnih dneh.
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-item">
+			<button class="faq-question" aria-expanded="false">
+				Ali moram plačati vnaprej?
+				<span class="faq-icon" aria-hidden="true">+</span>
+			</button>
+			<div class="faq-answer" role="region">
+				<div class="faq-answer-inner">
+					<strong>Ne!</strong> Insunorm deluje s sistemom plačila ob dostavi (COD – Cash on Delivery). Plačate šele ko prejmete paket in ga vidite v rokah – brez kreditne kartice, brez predplačila, brez tveganja.
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-item">
+			<button class="faq-question" aria-expanded="false">
+				Koliko stane Insunorm?
+				<span class="faq-icon" aria-hidden="true">+</span>
+			</button>
+			<div class="faq-answer" role="region">
+				<div class="faq-answer-inner">
+					Insunorm je trenutno na voljo za <strong>samo 39 €</strong>, kar predstavlja 50% popust od redne cene 78 €. V ceni je vključena tudi dostava po vsej Sloveniji.
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-item">
+			<button class="faq-question" aria-expanded="false">
+				Kako dolgo traja dostava?
+				<span class="faq-icon" aria-hidden="true">+</span>
+			</button>
+			<div class="faq-answer" role="region">
+				<div class="faq-answer-inner">
+					Dostava po vsej Republiki Sloveniji traja od <strong>2 do 5 delovnih dni</strong> po potrditvi naročila. Paket prejmete na vaš naslov, plačate pa ob prevzemu.
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-item">
+			<button class="faq-question" aria-expanded="false">
+				Ali je Insunorm varen?
+				<span class="faq-icon" aria-hidden="true">+</span>
+			</button>
+			<div class="faq-answer" role="region">
+				<div class="faq-answer-inner">
+					Insunorm je naravno prehransko dopolnilo, sestavljeno iz skrbno izbranih naravnih sestavin. <strong>Pred uporabo se posvetujte z zdravnikom</strong>, še posebej če jemljete zdravila za sladkorno bolezen ali imate kakšno kronično bolezen.
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-item">
+			<button class="faq-question" aria-expanded="false">
+				Kakšne so sestavine Insunorm?
+				<span class="faq-icon" aria-hidden="true">+</span>
+			</button>
+			<div class="faq-answer" role="region">
+				<div class="faq-answer-inner">
+					Insunorm vsebuje naravne zeliščne izvlečke in vitamine, ki podpirajo normalno presnovo in pomagajo ohranjati zdravo raven energije. Formula ne vsebuje umetnih barvil, konzervansov ali glutena.
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-item">
+			<button class="faq-question" aria-expanded="false">
+				Kako poteka vračilo blaga?
+				<span class="faq-icon" aria-hidden="true">+</span>
+			</button>
+			<div class="faq-answer" role="region">
+				<div class="faq-answer-inner">
+					Imate pravico do vračila neodprtega blaga v roku 14 dni od prejema. Za vračilo nas kontaktirajte prek strani <a href="/kontakt.html">Kontakt</a>. Podrobnosti so na voljo v naši <a href="/politika-vracil.html">Politiki vračil</a>.
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-item">
+			<button class="faq-question" aria-expanded="false">
+				Ali dostavite tudi v tujino?
+				<span class="faq-icon" aria-hidden="true">+</span>
+			</button>
+			<div class="faq-answer" role="region">
+				<div class="faq-answer-inner">
+					Trenutno dostavimo <strong>izključno po Republiki Sloveniji</strong>. Dostava v tujino ni na voljo.
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="cta-box">
+		<h2>Niste našli odgovora?</h2>
+		<p>Naša ekipa je vam na voljo za vsako vprašanje. Pišite nam in odgovorili bomo v roku enega delovnega dne.</p>
+		<a href="/kontakt.html" class="btn-cta">Stopite v stik z nami →</a>
+	</div>
+
+</div>
+
+<footer class="page-footer">
+	<p>&copy; 2025 Insunorm Slovenija. Vse pravice pridržane.</p>
+	<p style="margin-top:8px">
+		<a href="/">Domov</a>
+		<a href="/politika-zasebnosti.html">Zasebnost</a>
+		<a href="/politika-dostave.html">Dostava</a>
+		<a href="/kontakt.html">Kontakt</a>
+	</p>
+</footer>
+
+<script>
+	document.querySelectorAll('.faq-question').forEach(btn => {
+		btn.addEventListener('click', () => {
+			const item = btn.closest('.faq-item');
+			const isOpen = item.classList.contains('open');
+			document.querySelectorAll('.faq-item.open').forEach(i => {
+				i.classList.remove('open');
+				i.querySelector('.faq-question').setAttribute('aria-expanded','false');
+			});
+			if (!isOpen) {
+				item.classList.add('open');
+				btn.setAttribute('aria-expanded','true');
+			}
+		});
+	});
+</script>
+
+</body>
+</html>
